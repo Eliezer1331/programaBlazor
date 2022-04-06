@@ -1,6 +1,7 @@
 using Blazor.Data;
 using Blazor.Interfaces;
 using Blazor.Servicios;
+using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -15,6 +16,7 @@ MySQLConfiguration cadenaConexion = new MySQLConfiguration(builder.Configuration
 builder.Services.AddSingleton(cadenaConexion);
 
 builder.Services.AddScoped<IUsuarioServicio, UsuarioServicio>();
+builder.Services.AddSweetAlert2();
 
 var app = builder.Build();
 

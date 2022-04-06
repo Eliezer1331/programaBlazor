@@ -4,7 +4,7 @@ using Modelos;
 
 namespace Blazor.Pages.Usuarios;
 
-partial class Usuarios
+partial class Usuarios 
 {
     [Inject] private IUsuarioServicio _usuarioServicio { get; set; }
 
@@ -14,6 +14,5 @@ partial class Usuarios
     {
         usuariosLista = await _usuarioServicio.GetLista();
     }
-
 
 }
